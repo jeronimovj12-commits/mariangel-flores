@@ -1,0 +1,53 @@
+FLORES AMARILLAS PARA TI
+========================
+
+CONTENIDO
+- index.html: estructura y mensajes de la página.
+- styles.css: colores, diseño para celular y animaciones.
+- script.js: pétalos, carta interactiva y personalización.
+- assets/flores-amarillas.webp: imagen original y optimizada para celular.
+
+PERSONALIZAR LOS NOMBRES
+1. Abre script.js.
+2. Las primeras líneas contienen:
+
+   nombreDeElla: "Mariangel",
+   firma: "Con todo mi amor"
+
+3. Cambia únicamente el texto entre comillas. Ejemplo:
+
+   nombreDeElla: "Valentina",
+   firma: "Con amor, Jerónimo"
+
+4. Guarda con Ctrl + S.
+
+PROBAR EN EL COMPUTADOR
+1. Abre la carpeta completa en Visual Studio Code.
+2. Abre Terminal > Nueva terminal.
+3. Ejecuta:
+
+   python -m http.server 5500
+
+4. Sin cerrar la terminal, abre en Chrome:
+
+   http://localhost:5500
+
+5. Para detener el servidor, regresa a la terminal y pulsa Ctrl + C.
+
+PROBAR COMO SI FUERA UN CELULAR
+1. Con la página abierta en Chrome, pulsa F12.
+2. Pulsa el icono de teléfono/tableta de la barra superior.
+3. Elige un modelo de celular y recarga la página.
+
+SUBIR A GITHUB PAGES
+1. Crea un repositorio nuevo o abre el repositorio destinado a este detalle.
+2. Sube index.html, styles.css, script.js y la carpeta assets.
+3. En el repositorio abre Settings > Pages.
+4. En Source selecciona "Deploy from a branch".
+5. Selecciona main y /(root), luego Save.
+6. GitHub mostrará el enlace cuando termine de publicar.
+
+IMPORTANTE
+- Conserva todos los archivos y la carpeta assets juntos.
+- La página no usa librerías externas y funciona en celular.
+- La imagen floral fue creada específicamente para este detalle.

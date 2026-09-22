@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#07120f">
+  <meta name="description" content="Un detalle de flores amarillas hecho con mucho cariño.">
+  <title>Flores amarillas para ti</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%2308120f'/%3E%3Ccircle cx='32' cy='32' r='17' fill='%23f6c94c'/%3E%3Ccircle cx='32' cy='32' r='7' fill='%239c6511'/%3E%3C/svg%3E">
+  <link rel="preload" as="image" href="assets/flores-amarillas.webp" type="image/webp">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="reading-progress" aria-hidden="true"><span></span></div>
+  <canvas id="petal-canvas" aria-hidden="true"></canvas>
+  <div class="pointer-light" aria-hidden="true"></div>
+
+  <section class="opening-screen" id="opening-screen" aria-labelledby="opening-title">
+    <div class="opening-screen__glow" aria-hidden="true"></div>
+    <div class="opening-card">
+      <span class="opening-card__eyebrow">Un detalle solo para ti</span>
+      <div class="opening-card__seal" aria-hidden="true">✦</div>
+      <h1 id="opening-title">Hoy hay flores<br>esperando por ti</h1>
+      <p>No pude entregártelas en persona, así que preparé algo que puedes abrir desde cualquier lugar.</p>
+      <button class="button button--gold" id="open-experience" type="button">
+        <span>Abrir mi detalle</span>
+        <span aria-hidden="true">→</span>
+      </button>
+    </div>
+  </section>
+
+  <header class="topbar" aria-label="Encabezado">
+    <a class="wordmark" href="#inicio" aria-label="Ir al inicio">
+      <span class="wordmark__sun" aria-hidden="true"></span>
+      <span>Flores para <strong data-her-name>Mariangel</strong></span>
+    </a>
+    <a class="topbar__letter-link" href="#carta">Ver mi carta</a>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero__image" role="img" aria-label="Rosas amarillas iluminadas por el atardecer"></div>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="eyebrow reveal">Un jardín que no se marchita</p>
+        <h2 id="hero-title" class="reveal">
+          No pude darte flores amarillas en persona…
+          <em>así que hice un lugar donde siempre florecen.</em>
+        </h2>
+        <p class="hero__intro reveal">
+          Este pequeño rincón existe para recordarte lo importante que eres para mí,
+          hoy y cada día.
+        </p>
+        <a class="button button--glass reveal" href="#significado">
+          <span>Descubrir este detalle</span>
+          <span aria-hidden="true">↓</span>
+        </a>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span></span>
+        Desliza
+      </div>
+    </section>
+
+    <section class="meaning section" id="significado" aria-labelledby="meaning-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Lo que quiero que recuerdes</p>
+        <h2 id="meaning-title">No son solo flores.</h2>
+        <p>Son una forma de decirte, incluso en la distancia, todo esto:</p>
+      </div>
+
+      <div class="meaning-grid">
+        <article class="meaning-card reveal">
+          <span class="meaning-card__number">01</span>
+          <span class="meaning-card__spark" aria-hidden="true">✦</span>
+          <h3>Eres muy importante para mí</h3>
+          <p>Tu presencia ocupa un lugar especial en mi vida y nunca quiero que lo olvides.</p>
+        </article>
+
+        <article class="meaning-card reveal">
+          <span class="meaning-card__number">02</span>
+          <span class="meaning-card__spark" aria-hidden="true">✦</span>
+          <h3>Haces más bonitos mis días</h3>
+          <p>Hay personas que iluminan sin intentarlo. Para mí, tú eres una de ellas.</p>
+        </article>
+
+        <article class="meaning-card reveal">
+          <span class="meaning-card__number">03</span>
+          <span class="meaning-card__spark" aria-hidden="true">✦</span>
+          <h3>Te llevo conmigo</h3>
+          <p>Aunque hoy no pudiera estar a tu lado, estuviste presente en mis pensamientos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="letter-section section" id="carta" aria-labelledby="letter-title">
+      <div class="letter-intro reveal">
+        <p class="eyebrow">Hay palabras que también florecen</p>
+        <h2 id="letter-title">Escribí algo para ti.</h2>
+        <p>Toca el sobre para abrirlo.</p>
+      </div>
+
+      <div class="letter-wrap reveal">
+        <button class="envelope" id="letter-toggle" type="button" aria-expanded="false" aria-controls="letter-content">
+          <span class="envelope__top" aria-hidden="true"></span>
+          <span class="envelope__front" aria-hidden="true"></span>
+          <span class="envelope__seal" aria-hidden="true">✦</span>
+          <span class="envelope__label">Abrir mi carta</span>
+        </button>
+
+        <article class="letter" id="letter-content" aria-hidden="true">
+          <div class="letter__ornament" aria-hidden="true">✦</div>
+          <p class="letter__to">Para <span data-her-name>Mariangel</span>:</p>
+          <p>
+            Perdóname por no haber podido estar contigo para entregarte flores amarillas en persona.
+            No quería que este momento pasara sin recordarte lo importante que eres para mí.
+          </p>
+          <p>
+            No existe una página capaz de guardar todo lo que siento por ti, pero quise crear este
+            pequeño lugar con mucho amor, para que cuando lo abras encuentres un detalle hecho
+            pensando especialmente en ti.
+          </p>
+          <p>
+            Gracias por ser esa persona que hace más bonitos mis días, por tu forma de estar en mi vida
+            y por todo lo que significas para mí.
+          </p>
+          <p>
+            Estas flores no se marchitan, porque representan un cariño que quiero seguir cuidando todos los días.
+          </p>
+          <p class="letter__signature" data-my-signature>Con todo mi amor</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="garden section" aria-labelledby="garden-title">
+      <div class="garden__halo" aria-hidden="true"></div>
+      <div class="garden__content reveal">
+        <span class="garden__symbol" aria-hidden="true">✦</span>
+        <p class="eyebrow">Este jardín responde a tus manos</p>
+        <h2 id="garden-title">Hazlo florecer.</h2>
+        <p>Toca el botón y deja caer más pétalos amarillos sobre esta historia.</p>
+        <button class="button button--gold" id="bloom-button" type="button">
+          <span>Hacer florecer</span>
+          <span aria-hidden="true">✦</span>
+        </button>
+        <p class="garden__counter" id="bloom-counter" aria-live="polite">Este detalle ya está floreciendo para ti.</p>
+      </div>
+    </section>
+
+    <section class="finale section" aria-labelledby="finale-title">
+      <div class="finale__line" aria-hidden="true"></div>
+      <div class="finale__content reveal">
+        <p class="eyebrow">Antes de irte</p>
+        <h2 id="finale-title">Que nunca te falten razones para sonreír ni flores que te recuerden cuánto significas para mí.</h2>
+        <p class="finale__signature" data-my-signature>Con todo mi amor</p>
+        <button class="finale__button" id="final-touch" type="button">
+          Toca aquí para guardar este momento
+        </button>
+        <p class="finale__message" id="final-message" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hecho con cariño y flores amarillas.</p>
+  </footer>
+</body>
+</html>
